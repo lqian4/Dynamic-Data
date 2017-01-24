@@ -4,23 +4,17 @@
 
 
 <head>
-    <title>Basic Form</title>
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <title>Character Data</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
     <div id="mainForm">
-        <h1>Simple Form</h1>
+        <h1>Dungeons and Dragons</h1>
         <form action="" method="post">
 
-            <label for="firstname">First name:</label>
-            <input type="text" name="firstname" id="firstnam e">
-
-            <br>
-            <br>
-
-            <label for="lastname">Last name:</label>
-            <input type="text" name="lastname" id="lastname">
+            <label for="charactername">Character Name:</label>
+            <input type="text" name="charactername" id="charactername">
 
             <br>
             <br>
@@ -35,52 +29,102 @@
 
             <br>
             <input type="radio" name="gender" value="other" id="other">
-            <label for="other">Other</label>
+            <label for="other">Other: <input type="text" name="firstname" id="firstnam e"></label>
 
 
             <br>
             <br>
-
-            <label for="cars">Cars</label>
-            <select name="cars" id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
+            <label for="race">Race:</label>
+            <select name="race" id="race">
+                <option value="volvo">Human</option>
+                <option value="saab">Demon</option>
+                <option value="fiat">Dwarf</option>
+                <option value="audi">Elf</option>
+                <option value="audi">Troll</option>
+                <option value="audi">Goblin</option>
+                
             </select>
 
             <br>
             <br>
 
-            <label for="message">Other</label>
+            <label for="ride">Ride:</label>
+            <select name="ride" id="ride">
+                <option value="volvo">Horse</option>
+                <option value="saab">Dragon</option>
+                <option value="fiat">Wolf</option>
+                <option value="audi">Pig</option>
+                <option value="audi">Deer</option>
+                <option value="audi">Other</option>
+                
+            </select>
+
             <br>
-            <textarea name="message" rows="10" cols="30" id="message">
-                The cat was playing in the garden.
+            <br>
+            
+               <label>Weapon:</label>
+            <br>
+            <input type="radio" name="weapon" value="sword" id="male">
+            <label for="male"><img id="sword" src="image/sword.jpg"></label>
+            <br>
+            <input type="radio" name="gender" value="spear" id="female">
+            <label for="female"><img id="sword" src="image/spear.jpg"></label>
+
+            <br>
+            <input type="radio" name="gender" value="axe" id="other">
+            <label for="other"><img id="sword" src="image/axe.jpg"></label>
+            
+            <br>
+            <input type="radio" name="gender" value="bow" id="other">
+            <label for="other"><img id="sword" src="image/bow.jpg"></label>
+
+
+
+            <br>
+            <br>
+
+            <label for="message">Background Story</label>
+            <br>
+            <textarea name="message" rows="10" cols="30" id="message">I am the child of the last guaridan and my parents were murdered brutally by demons. I am seeking my revenge...
             </textarea>
 
             <br>
             <br>
 
-            <input type="checkbox" name="vehicle1" value="Bike"> I have a bike
-            <br>
-            <input type="checkbox" name="vehicle2" value="Car" disabled> I have a car
+        
 
-            <br>
-            <br>
-
-            <label for="color">Color Picker </label>
+            <label for="color">Character Color </label>
 
             <input type="color" name="favcolor" value="#ff0000" id="color">
 
             <br>
             <br>
-            <label for="range">Range 0-10</label>
+            
+            <h3>Character Stats</h3>
+            <label for="range">Health</label>
 
             <input type="range" name="points" min="0" max="10" id="range">
 
             <br>
             <br>
+             <label for="range">Strength</label>
 
+            <input type="range" name="points" min="0" max="10" id="range">
+
+            <br>
+            <br>
+             <label for="range">Dexterity</label>
+
+            <input type="range" name="points" min="0" max="10" id="range">
+
+            <br>
+            <br>
+             <label for="range">Intelligence</label>
+
+            <input type="range" name="points" min="0" max="10" id="range">
+
+            <br>
+            <br>
             <label for="email">E-mail:</label>
             <input type="email" name="email" id="email">
 

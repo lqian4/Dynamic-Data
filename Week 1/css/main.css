@@ -1,0 +1,38 @@
+body{
+    background-color: darkgoldenrod;
+    font-family: sans-serif;
+}
+
+#mainForm{
+    background-color: white;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#quarters{
+    width: 100%;
+}
+
+#cars{
+    width: 100%;
+}
+
+
+#logo{
+    background-image: url("../images/monsterMash.png");
+    width: 270px;
+    height: 95px;
+    margin-bottom: 10px;
+}
+
+#sword {
+    width:50px;
+    height: 50px;
+}
+
+#race{
+    background-color:;
+    font
+    
+}
