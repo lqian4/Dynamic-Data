@@ -6,13 +6,18 @@ body{
 #mainForm{
     color:white;
     background-image: url("../image/1.jpg");
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+
+   
+    padding: 100px;
 }
 
 #quarters{
     width: 100%;
+}
+
+#charactername{
+    width: 50%;
 }
 
 #race{
@@ -23,24 +28,23 @@ body{
     width: 50%;
 }
 
-#logo{
-    width: 400px;
-    height: 125px;
-    
-    
-}
+
 
 #sword {
     width:50px;
     height: 50px;
 }
 
-#race{
-    background-color:;
-    font
-    
-}
+
 
 #message{
-    width:350px;
+    width:50%;
+}
+
+.nav nav-tabs{
+font-weight: 300;
+}
+
+.form-control{
+width:50%;
 }
