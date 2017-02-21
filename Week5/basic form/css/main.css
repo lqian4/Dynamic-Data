@@ -1,0 +1,54 @@
+
+body{
+    
+    font-family: sans-serif;
+}
+
+#mainForm{
+    color:white;
+    background-image: url("../image/1.jpg");
+    width: 100%;
+
+   
+    padding: 100px;
+}
+
+#quarters{
+    width: 100%;
+}
+
+#charactername{
+    width: 50%;
+}
+
+#race{
+    width: 50%;
+}
+
+#ride{
+    width: 50%;
+}
+
+
+
+#sword {
+    width:50px;
+    height: 50px;
+}
+
+
+
+#message{
+    width:50%;
+}
+
+.nav nav-tabs{
+font-weight: 300;
+}
+
+.form-control{
+width:50%;
+}
+
+
+    

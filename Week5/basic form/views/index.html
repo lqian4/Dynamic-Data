@@ -1,0 +1,217 @@
+
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+   
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>Character Data</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <a href="index.html"><img src="../image/header.jpg" class="img-responsive" alt=""> </a>
+<nav class="navbar navbar-default navbar" role="navigation">
+
+    <div class="container-responsive">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse.collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+        </button>
+
+
+
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="col-md-3 col-lg-3"><a href="#home" onmousedown="mDown(this)" onmouseup="mUp(this)">Homebase</a></li>
+                <li class="col-md-2 col-lg-2"><a href="#about">Character Build</a></li>
+                <li class="col-md-2 col-lg-2"><a href="#services">Game Stories</a></li>
+                <li class="col-md-2 col-lg-2"><a href="#contact">Game blog</a></li>
+                <li class="col-md-2 col-lg-2"><a href="#contact">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+</nav>
+<body>
+    <div class="col-md-12">
+        <div class="container">
+            <div id="mainForm">
+
+                <form action="/form" method="POST">
+
+                    <label id="charactername" for="charactername">Character Name:</label>
+                    <input name="charactername" type="text" class="form-control" placeholder="Ex: Diablo">
+
+                    <br>
+                    <br>
+
+                    <label>Gender:</label>
+                    <br>
+
+                    <input type="radio" name="gender" value="male" checked id="male">
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" name="gender" value="female" id="female">
+                    <label for="female">female</label>
+
+                    <br>
+                    <input type="radio" name="gender" value="other" id="other">
+                    <label for="other">Other:
+                        <input type="form-control" name="firstname" id="firstname">
+                    </label>
+
+
+                    <br>
+                    <br>
+                    <label for="race">Race:</label>
+                    <select name="race" id="race" class="form-control">
+                        <option value="volvo">Human</option>
+                        <option value="saab">Demon</option>
+                        <option value="fiat">Dwarf</option>
+                        <option value="audi">Elf</option>
+                        <option value="audi">Troll</option>
+                        <option value="audi">Goblin</option>
+
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for="ride">Ride:</label>
+                    <select name="ride" id="ride" class="form-control">
+                        <option value="volvo">Horse</option>
+                        <option value="saab">Dragon</option>
+                        <option value="fiat">Wolf</option>
+                        <option value="audi">Pig</option>
+                        <option value="audi">Deer</option>
+                        <option value="audi">Other</option>
+
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for= "weapon">Weapon:</label>
+                    <br>
+
+
+                    <input type="radio" name="gender" value="sword" id="weapon">
+                    <label class="radio-inline"><img id="sword" src="../image/sword.jpg"></label>
+                    <br>
+                    <input type="radio" name="gender" value="spear" id="female">
+                    <label class="radio-inline"><img id="sword" src="../image/spear.jpg"></label>
+
+                    <br>
+                    <input type="radio" name="gender" value="axe" id="other">
+                    <label class="radio-inline"><img id="sword" src="../image/axe.jpg"></label>
+
+                    <br>
+                    <input type="radio" name="gender" value="bow" id="other">
+                    <label class="radio-inline"><img id="sword" src="../image/bow.jpg"></label>
+
+
+
+                    <br>
+                    <br>
+
+                    <label for="message">Background Story:</label>
+                    <br>
+
+                    <textarea name="message" class="form-control" rows="10" cols="30" id="message">I am the child of the last guaridan and my parents were murdered brutally by demons. I am seeking my revenge...
+                    </textarea>
+
+                    <br>
+                    <br>
+
+
+
+                    <label for="color">Character Color </label>
+
+                    <input type="color" name="favcolor" value="#ff0000" id="color">
+
+                    <br>
+                    <br>
+
+                    <h3>Character Stats</h3>
+                    <label for="range">Health</label>
+
+                    <input type="range" name="points" min="0" max="10" id="range">
+
+                    <br>
+                    <br>
+                    <label for="range">Strength</label>
+
+                    <input type="range" name="points" min="0" max="10" id="range">
+
+                    <br>
+                    <br>
+                    <label for="range">Dexterity</label>
+
+                    <input type="range" name="points" min="0" max="10" id="range">
+
+                    <br>
+                    <br>
+                    <label for="range">Intelligence</label>
+
+                    <input type="range" name="points" min="0" max="10" id="range">
+
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="InputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">Remember me
+                        </label>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <button type="submit" class="btn btn-primary" onmouseover="mOver(this)" onmouseout="mOut(this)" onmousedown="mClick(this)">Submit</button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+    
+  
+
+
+    <script src="../js/script.js"></script>
+</body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+
+</html>
+        
