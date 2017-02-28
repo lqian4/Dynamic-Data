@@ -10,13 +10,16 @@
   "license": "ISC",
   "dependencies": {
     "blipp": "^2.3.0",
+    "fetch": "^1.1.0",
     "handlebars": "^4.0.6",
     "hapi": "^16.1.0",
     "inert": "^4.1.0",
     "mysql": "^2.13.0",
+    "node": "0.0.0",
     "pg": "^6.1.2",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.30.2",
+    "sqlite": "^2.3.0",
     "sqlite3": "^3.1.8",
     "tedious": "^1.14.0",
     "vision": "^4.1.1"

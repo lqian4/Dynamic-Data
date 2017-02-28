@@ -1,25 +1,5 @@
 
-  <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-
-    <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-   
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <title>Character Data</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <a href="index.html"><img src="../image/header.jpg" class="img-responsive" alt=""> </a>
+    <a href="index.html"><img src="../pubilc/image/header.jpg" class="img-responsive" alt=""> </a>
 <nav class="navbar navbar-default navbar" role="navigation">
 
     <div class="container-responsive">
@@ -81,12 +61,12 @@
                     <br>
                     <label for="race">Race:</label>
                     <select name="race" id="race" class="form-control">
-                        <option value="volvo">Human</option>
-                        <option value="saab">Demon</option>
-                        <option value="fiat">Dwarf</option>
-                        <option value="audi">Elf</option>
-                        <option value="audi">Troll</option>
-                        <option value="audi">Goblin</option>
+                        <option value="human">Human</option>
+                        <option value="demon">Demon</option>
+                        <option value="dwarf">Dwarf</option>
+                        <option value="elf">Elf</option>
+                        <option value="troll">Troll</option>
+                        <option value="goblin">Goblin</option>
 
                     </select>
 
@@ -95,35 +75,35 @@
 
                     <label for="ride">Ride:</label>
                     <select name="ride" id="ride" class="form-control">
-                        <option value="volvo">Horse</option>
-                        <option value="saab">Dragon</option>
-                        <option value="fiat">Wolf</option>
-                        <option value="audi">Pig</option>
-                        <option value="audi">Deer</option>
-                        <option value="audi">Other</option>
+                        <option value="horse">Horse</option>
+                        <option value="dragon">Dragon</option>
+                        <option value="wolf">Wolf</option>
+                        <option value="pig">Pig</option>
+                        <option value="deer">Deer</option>
+                        <option value="other">Other</option>
 
                     </select>
 
                     <br>
                     <br>
 
-                    <label for= "weapon">Weapon:</label>
+                    <label for= "weapon" id="weapon" name= "weapon">Weapon:</label>
                     <br>
 
 
                     <input type="radio" name="gender" value="sword" id="weapon">
-                    <label class="radio-inline"><img id="sword" src="../image/sword.jpg"></label>
+                    <label class="radio-inline"><img id="sword" src="../pubilc/image/sword.jpg"></label>
                     <br>
                     <input type="radio" name="gender" value="spear" id="female">
-                    <label class="radio-inline"><img id="sword" src="../image/spear.jpg"></label>
+                    <label class="radio-inline"><img id="sword" src="../pubilc/image/spear.jpg"></label>
 
                     <br>
                     <input type="radio" name="gender" value="axe" id="other">
-                    <label class="radio-inline"><img id="sword" src="../image/axe.jpg"></label>
+                    <label class="radio-inline"><img id="sword" src="../pubilc/image/axe.jpg"></label>
 
                     <br>
                     <input type="radio" name="gender" value="bow" id="other">
-                    <label class="radio-inline"><img id="sword" src="../image/bow.jpg"></label>
+                    <label class="radio-inline"><img id="sword" src="../pubilc/image/bow.jpg"></label>
 
 
 
@@ -151,40 +131,40 @@
                     <h3>Character Stats</h3>
                     <label for="range">Health</label>
 
-                    <input type="range" name="points" min="0" max="10" id="range">
+                    <input type="range" name="points" min="0" max="10" id="health">
 
                     <br>
                     <br>
                     <label for="range">Strength</label>
 
-                    <input type="range" name="points" min="0" max="10" id="range">
+                    <input type="range" name="points" min="0" max="10" id="strength">
 
                     <br>
                     <br>
                     <label for="range">Dexterity</label>
 
-                    <input type="range" name="points" min="0" max="10" id="range">
+                    <input type="range" name="points" min="0" max="10" id="dexterity">
 
                     <br>
                     <br>
                     <label for="range">Intelligence</label>
 
-                    <input type="range" name="points" min="0" max="10" id="range">
+                    <input type="range" name="points" min="0" max="10" id="intelligence">
 
                     <br>
                     <br>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
+                        <label for="InputEmail">Email address</label>
                         <input type="email" class="form-control" id="InputEmail" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
+                        <label for="eInputPassword">Password</label>
                         <input type="password" class="form-control" id="InputPassword" placeholder="Password">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
+                        <label for="InputFile">File input</label>
                         <input type="file" id="InputFile">
-                        <p class="help-block">Example block-level help text here.</p>
+                       
                     </div>
                     <div class="checkbox">
                         <label>
@@ -206,12 +186,3 @@
   
 
 
-    <script src="../js/script.js"></script>
-</body>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="../js/bootstrap.min.js"></script>
-
-</html>
-        

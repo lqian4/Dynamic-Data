@@ -1,6 +1,4 @@
-var question = window.prompt("What is your name?");
 
-window.alert("Hello, " + question);
 
 
 function mDown(obj) {
@@ -24,6 +22,3 @@ function mOut(obj) {
 }
 
 
-function mClick(obj) {
-    window.alert("Are you sure you are ready?");
-}

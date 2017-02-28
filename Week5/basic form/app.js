@@ -43,7 +43,7 @@ var sequelize = new Sequelize('db', 'username', 'password', {
 });
 
 
-var Character = sequelize.define('character', {
+var Character = sequelize.define('characters', {
 
     charactername: {
         type: Sequelize.STRING
@@ -51,13 +51,13 @@ var Character = sequelize.define('character', {
     gender: {
         type: Sequelize.STRING
     },
-    weapon: {
-        type: Sequelize.STRING
-    },
     race: {
         type: Sequelize.STRING
     },
-    ride: {
+   ride: {
+        type: Sequelize.STRING
+    },
+    weapon: {
         type: Sequelize.STRING
     },
     message: {
@@ -141,15 +141,106 @@ server.route({
 
 server.route({
     method: 'GET',
-    path: '/createDB',
+    path: '/displayAll',
     handler: function (request, reply) {
-        // force: true will drop the table if it already exists
-        Character.sync({
-            force: true
-        })
-        reply("Database Created")
+        Character.findAll().then(function (users) {
+            // projects will be an array of all User instances
+            //console.log(users[0].characterName);
+            var allUsers = JSON.stringify(users);
+            reply.view('dbresponse', {
+                dbresponse: allUsers
+            });
+        });
     }
 });
+
+server.route({
+    method: 'GET',
+    path: '/destroyAll',
+    handler: function (request, reply) {
+
+        Character.drop();
+
+        reply("destroy all");
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/delete/{id}',
+    handler: function (request, reply) {
+
+
+        Character.destroy({
+            where: {
+                id: encodeURIComponent(request.params.id)
+            }
+        });
+
+        reply().redirect("/displayAll");
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/find/{characterName}',
+    handler: function (request, reply) {
+        Character.findOne({
+            where: {
+                characterName: encodeURIComponent(request.params.characterName),
+            }
+        }).then(function (user) {
+            var currentUser = "";
+            currentUser = JSON.stringify(user);
+            //console.log(currentUser);
+            currentUser = JSON.parse(currentUser);
+            console.log(currentUser);
+            reply.view('find', {
+                dbresponse: currentUser
+            });
+
+        });
+    }
+});
+
+
+server.route({
+    method: 'GET',
+    path: '/update/{id}',
+    handler: function (request, reply) {
+        var id = encodeURIComponent(request.params.id);
+
+
+        reply.view('updatecharacter', {
+            routeId: id
+        });
+    }
+
+});
+
+server.route({
+    method: 'POST',
+    path: '/update/{id}',
+    handler: function (request, reply) {
+        var cm = "";
+        var id = encodeURIComponent(request.params.id);
+        var formresponse = JSON.stringify(request.payload);
+        var parsing = JSON.parse(formresponse);
+        //console.log(parsing);
+
+        Character.update(parsing, {
+            where: {
+                id: id
+            }
+        });
+
+        reply().redirect("/displayAll");
+
+    }
+
+});
+
+
 
 server.start((err) => {
 
