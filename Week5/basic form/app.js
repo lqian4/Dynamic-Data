@@ -5,6 +5,8 @@ const Blipp = require('blipp');
 const Vision = require('vision');
 const Inert = require('inert');
 const Path = require('path');
+var Fetch = require('node-fetch');
+var FormData = require('form-data');
 const Handlebars = require('handlebars');
 
 const fs = require("fs");
