@@ -8,5 +8,6 @@
 ### Therefore, for the second version of this game, I added in functions like the button that decides who is the drawer, a timer in whcih the player has to finish their guessing in a certain amount of time as well as the leaderboard fucntion which stores the informagtion of who wins the game the most times. And the most important function I added in is the function that when user type in the answer which they think the drawer is drawing, the system will be able to decide if the player get the correct answer. ###
 
 ### The next step or to say the 2.0 version of this game is to fix a glitch since when players are trying to type in the answer, they have to type exactly the same as the reset of the system. For example, the system will say either "breakingbad" or "Breaking bad" is wrong but only "Breaking Bad" is  right. So for me, the next challenge of this game is to add in a mechanism that can tell if the answer is right or wrong by itself instead of having the answer to be exactly the same which seems unreasonable.  ###
-[Demo](http://paintgame.moyuyc.xyz/)
+
+[Demo]
 
