@@ -9,5 +9,5 @@
 
 ### The next step or to say the 2.0 version of this game is to fix a glitch since when players are trying to type in the answer, they have to type exactly the same as the reset of the system. For example, the system will say either "breakingbad" or "Breaking bad" is wrong but only "Breaking Bad" is  right. So for me, the next challenge of this game is to add in a mechanism that can tell if the answer is right or wrong by itself instead of having the answer to be exactly the same which seems unreasonable.  ###
 
-[Demo]
+[Demo](https://infinite-island-88387.herokuapp.com/)
 
