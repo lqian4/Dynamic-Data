@@ -1,0 +1,3 @@
+# Week 1 Assignment
+#### This is the first week's assignment which is to create an entry form template through HTML/CSS basis. The theme I chose is a dungeon and dragon's story and the form is to create a character's stats based on the user's customized wants and needs for their characters. I also added some bootstrap buttons and dropdowns as well as places for file submission so that it can look like a real life form.
+#### Later on, by learning node.js better, I can use this entry form to actually create data entry sheets that user can enter their own into the webpage.
